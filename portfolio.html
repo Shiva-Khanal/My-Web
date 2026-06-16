@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Shiva Khanal — Student developer from Kathmandu building software, AI systems, and automations. Hackathon winner, ICSC Nepal #1, Sci-Tech Club President." />
+<title>Shiva Khanal — Student · Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="grid-bg"></div>
+<div class="noise"></div>
+
+<header class="nav" id="nav">
+  <a href="#hero" class="nav__brand">
+    <span class="nav__brand-mark">SK</span>
+    <span class="nav__brand-name">Shiva Khanal</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav__right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <a href="#contact" class="btn btn--ghost btn--sm">Get in touch</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero__inner">
+    <div class="hero__badge reveal">
+      <span class="dot"></span> Available for internships · Summer 2026
+    </div>
+    <h1 class="hero__title reveal">
+      <span>Building software,</span>
+      <span><em>automations</em>, and</span>
+      <span>AI-powered solutions.</span>
+    </h1>
+    <p class="hero__sub reveal">
+      I'm <strong>Shiva Khanal</strong> — a student developer from Kathmandu, Nepal. I turn curiosity into shipped products: hackathon-winning apps, agentic AI assistants, and tools people actually use.
+    </p>
+    <div class="hero__cta reveal">
+      <a href="#projects" class="btn btn--primary magnetic">
+        View Projects
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn btn--ghost magnetic">Contact Me</a>
+      <a href="https://github.com/Shiva-Khanal" target="_blank" rel="noopener" class="btn btn--ghost magnetic">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.7 5.53.7 11.8c0 4.94 3.2 9.13 7.64 10.6.56.1.77-.24.77-.54v-1.9c-3.11.68-3.77-1.5-3.77-1.5-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.4-1.22.72-1.5-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.43-2.22 1.15-3-.12-.28-.5-1.42.1-2.96 0 0 .94-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.13-1.45 3.07-1.15 3.07-1.15.6 1.54.22 2.68.1 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.24-5.1 5.51.41.36.77 1.06.77 2.13v3.16c0 .31.2.66.78.55 4.43-1.48 7.62-5.66 7.62-10.6C23.3 5.53 18.27.5 12 .5z"/></svg>
+        GitHub
+      </a>
+    </div>
+    <div class="hero__meta reveal">
+      <div><span class="k">Based in</span><span class="v">Kathmandu, Nepal</span></div>
+      <div><span class="k">Focus</span><span class="v">SWE · AI · Automation · Security</span></div>
+      <div><span class="k">Motto</span><span class="v">Learn to Grow.</span></div>
+    </div>
+  </div>
+
+  <div class="hero__visual reveal">
+    <div class="orb"></div>
+    <div class="card-stack">
+      <div class="mini-card mc-1">
+        <div class="mc-head"><span class="mc-dot"></span><span class="mc-dot"></span><span class="mc-dot"></span><span class="mc-title">terminal</span></div>
+        <pre class="mc-body"><span class="prompt">~ shiva</span> <span class="cmd">whoami</span>
+<span class="out">student · developer · builder</span>
+<span class="prompt">~ shiva</span> <span class="cmd">cat goals.txt</span>
+<span class="out">→ ship products that solve real problems
+→ learn deeply, every single day
+→ build with intent, not noise</span><span class="caret">▍</span></pre>
+      </div>
+      <div class="mini-card mc-2">
+        <div class="mc-row"><span>ICSC 2025 · Nepal</span><span class="pill">#1 Rank</span></div>
+        <div class="mc-row"><span>KIST Hackathon</span><span class="pill">Winner</span></div>
+        <div class="mc-row"><span>Sci-Tech Club</span><span class="pill">President</span></div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll">
+    <span></span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section__head reveal">
+    <span class="eyebrow">01 — About</span>
+    <h2 class="section__title">A curious builder, learning out loud.</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-copy reveal">
+      <p class="lead">I love building things and solving problems in my own way.</p>
+      <p>I'm a student developer from Nepal interested in software engineering, AI systems, automation, cybersecurity, and creating products that solve real-world problems.</p>
+      <p>From leading technical communities to winning competitions and shipping projects, I enjoy turning ideas into working solutions — and treating every project as a chance to learn something deeper than the project itself.</p>
+      <div class="about-quote">
+        <span class="quote-mark">“</span>
+        Learn to Grow.
+      </div>
+    </div>
+    <div class="about-side reveal">
+      <div class="stat-card">
+        <div class="stat__num" data-count="1">0</div>
+        <div class="stat__label">Rank in Nepal · ICSC 2025</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat__num" data-count="4">0</div>
+        <div class="stat__label">Hackathons participated</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat__num" data-count="10">0</div>
+        <div class="stat__label">Shipped projects & experiments</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat__num" data-count="3" data-suffix=".97">0</div>
+        <div class="stat__label">Grade 11 GPA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section__head reveal">
+    <span class="eyebrow">02 — Toolkit</span>
+    <h2 class="section__title">Tools I reach for.</h2>
+    <p class="section__sub">A growing stack across software, AI, and automation — picked for what actually ships.</p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-group reveal">
+      <h3>Programming</h3>
+      <ul><li>JavaScript</li><li>Python</li><li>C++</li></ul>
+    </div>
+    <div class="skill-group reveal">
+      <h3>Frontend</h3>
+      <ul><li>HTML</li><li>CSS</li><li>Tailwind CSS</li></ul>
+    </div>
+    <div class="skill-group reveal">
+      <h3>Backend & Data</h3>
+      <ul><li>Supabase</li><li>SQL</li></ul>
+    </div>
+    <div class="skill-group reveal">
+      <h3>Dev Tools</h3>
+      <ul><li>Git</li><li>GitHub</li><li>Linux</li></ul>
+    </div>
+    <div class="skill-group reveal">
+      <h3>AI & Automation</h3>
+      <ul><li>Local AI</li><li>Agentic AI</li><li>OpenClaw</li><li>OpenRouter</li><li>n8n</li></ul>
+    </div>
+    <div class="skill-group reveal">
+      <h3>Other</h3>
+      <ul><li>Cybersecurity</li><li>Leadership</li><li>Problem Solving</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section__head reveal">
+    <span class="eyebrow">03 — Selected Work</span>
+    <h2 class="section__title">Featured projects.</h2>
+    <p class="section__sub">A few things I've built, broken, and learned from.</p>
+  </div>
+
+  <div class="projects">
+    <article class="project reveal">
+      <div class="project__media">
+        <div class="proj-illustration pi-1">
+          <div class="pi-card"><span>📚</span><b>+12 XP</b></div>
+          <div class="pi-bar"><i style="width:78%"></i></div>
+          <div class="pi-row"><span>Streak</span><b>14d 🔥</b></div>
+          <div class="pi-row"><span>Leaderboard</span><b>#3</b></div>
+        </div>
+      </div>
+      <div class="project__body">
+        <div class="project__tag">🏆 Winning Hackathon Project</div>
+        <h3>Study Quest</h3>
+        <p>A gamified learning platform that turns studying into a quest — quizzes, notes, streaks, and leaderboards. Originally built at the KIST Hackathon, now being expanded into a full product.</p>
+        <ul class="chip-row">
+          <li>HTML</li><li>Tailwind</li><li>JavaScript</li><li>Supabase</li><li>Figma</li>
+        </ul>
+        <div class="project__links">
+          <a href="https://github.com/Shiva-Khanal/Study-Quest-Expt" target="_blank" rel="noopener">Current build ↗</a>
+          <a href="https://github.com/Shiva-Khanal/KIST-Hackathon-Study-Quest" target="_blank" rel="noopener">Hackathon version ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal project--reverse">
+      <div class="project__media">
+        <div class="proj-illustration pi-2">
+          <div class="pi-pin"></div>
+          <div class="pi-pin pi-pin--alt"></div>
+          <div class="pi-pin pi-pin--c"></div>
+          <div class="pi-card"><span>🤝</span><b>Help requested</b></div>
+          <div class="pi-row"><span>Nearby helpers</span><b>7</b></div>
+        </div>
+      </div>
+      <div class="project__body">
+        <div class="project__tag">⚡ Hackathon Project</div>
+        <h3>HelpNest</h3>
+        <p>A community-first platform connecting people who need help with people willing to give it. Built for small everyday tasks today, designed to grow into a wider service network tomorrow.</p>
+        <ul class="chip-row">
+          <li>Web</li><li>Community</li><li>Realtime</li>
+        </ul>
+        <div class="project__links">
+          <a href="https://github.com/Shiva-Khanal/DeerWalk-Hackathon-HelpNest" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project__media">
+        <div class="proj-illustration pi-3">
+          <div class="pi-chat pi-chat--in">Summarize today's research →</div>
+          <div class="pi-chat pi-chat--out"><b>Assistant</b><br/>Done. 3 papers, 1 email draft, calendar slotted.</div>
+          <div class="pi-row"><span>Telegram</span><b>connected</b></div>
+        </div>
+      </div>
+      <div class="project__body">
+        <div class="project__tag">🤖 AI + Automation</div>
+        <h3>Personal AI Assistant</h3>
+        <p>An agentic AI system that lives in Telegram — handles research, email tasks, productivity workflows, and automations. Built with OpenClaw, OpenRouter, and an n8n backbone.</p>
+        <ul class="chip-row">
+          <li>Agentic AI</li><li>OpenClaw</li><li>OpenRouter</li><li>n8n</li><li>Telegram</li>
+        </ul>
+        <div class="project__links">
+          <span class="muted">Private — demo on request</span>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="experiments reveal">
+    <div class="experiments__head">
+      <span class="eyebrow">Creative experiments</span>
+      <p>Small playful builds — the way I sharpen instincts between bigger projects.</p>
+    </div>
+    <div class="experiments__grid">
+      <a class="exp" href="https://github.com/Shiva-Khanal/Find_The_A" target="_blank" rel="noopener">
+        <div class="exp__art exp__art--a">A</div>
+        <div class="exp__meta"><h4>Find The A</h4><span>Attention game ↗</span></div>
+      </a>
+      <a class="exp" href="https://github.com/Shiva-Khanal/Letters-Flow" target="_blank" rel="noopener">
+        <div class="exp__art exp__art--l"><span>L</span><span>e</span><span>t</span><span>t</span><span>e</span><span>r</span><span>s</span></div>
+        <div class="exp__meta"><h4>Letters Flow</h4><span>Typography motion ↗</span></div>
+      </a>
+      <a class="exp" href="https://github.com/Shiva-Khanal/3D-Image-learning" target="_blank" rel="noopener">
+        <div class="exp__art exp__art--3d"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="exp__meta"><h4>3D Image Learning</h4><span>Depth experiments ↗</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="section__head reveal">
+    <span class="eyebrow">04 — Experience</span>
+    <h2 class="section__title">Where I've been showing up.</h2>
+  </div>
+  <ol class="timeline">
+    <li class="reveal">
+      <span class="t-dot"></span>
+      <div class="t-card">
+        <div class="t-meta"><span>2024 — Present</span><span class="t-tag">Leadership</span></div>
+        <h3>President · Sci-Tech Club, KIST College</h3>
+        <p>Leading a student-run technical community — organizing events, hosting Olympiads, coordinating workshops, and building a culture where students actually try things.</p>
+      </div>
+    </li>
+    <li class="reveal">
+      <span class="t-dot"></span>
+      <div class="t-card">
+        <div class="t-meta"><span>2024 — Present</span><span class="t-tag">Freelance</span></div>
+        <h3>Freelance · Automation & Workflows</h3>
+        <p>Built automated YouTube workflow systems for clients — content pipelines, scheduling, and AI-assisted post-production using n8n and custom scripts.</p>
+      </div>
+    </li>
+    <li class="reveal">
+      <span class="t-dot"></span>
+      <div class="t-card">
+        <div class="t-meta"><span>Ongoing</span><span class="t-tag">Hackathons</span></div>
+        <h3>Hackathon Builder</h3>
+        <p>Multiple college and inter-college hackathons — shipping working products under pressure, from gamified learning to community platforms.</p>
+      </div>
+    </li>
+    <li class="reveal">
+      <span class="t-dot"></span>
+      <div class="t-card">
+        <div class="t-meta"><span>Ongoing</span><span class="t-tag">Volunteer</span></div>
+        <h3>IT Volunteer · College</h3>
+        <p>Supporting IT activities across college events — setup, troubleshooting, and helping fellow students get unstuck with tech.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  <div class="section__head reveal">
+    <span class="eyebrow">05 — Achievements</span>
+    <h2 class="section__title">Wins along the way.</h2>
+  </div>
+
+  <div class="ach-stats">
+    <div class="ach-stat reveal"><b data-count="1">0</b><span>Nationwide rank · ICSC '25</span></div>
+    <div class="ach-stat reveal"><b data-count="3">0</b><span>First-place finishes</span></div>
+    <div class="ach-stat reveal"><b data-count="5">0</b><span>Olympiads hosted</span></div>
+    <div class="ach-stat reveal"><b data-count="3" data-suffix=".97">0</b><span>Grade 11 GPA</span></div>
+  </div>
+
+  <div class="ach-grid">
+    <div class="ach reveal ach--feature">
+      <div class="ach__icon">🥇</div>
+      <h3>Rank #1 in Nepal — ICSC 2025</h3>
+      <p>Achieved the highest score nationwide in the final round of the International Computer Science Competition 2025, finishing as Nepal's #1.</p>
+    </div>
+    <div class="ach reveal"><div class="ach__icon">🌐</div><h3>ICSC Ambassador</h3><p>Current ambassador for the International Computer Science Competition — representing and promoting CS culture in Nepal.</p></div>
+    <div class="ach reveal"><div class="ach__icon">🏆</div><h3>First Position — KIST Intra-College Code War</h3><p>Won the college-wide competitive programming contest at KIST.</p></div>
+    <div class="ach reveal"><div class="ach__icon">🥈</div><h3>First Position — Trinity Science Exhibition</h3><p>Took first place at the Trinity International College science exhibition.</p></div>
+    <div class="ach reveal"><div class="ach__icon">🎮</div><h3>Hackathon Winner — Study Quest</h3><p>Built and shipped the winning project at the KIST College Hackathon.</p></div>
+    <div class="ach reveal"><div class="ach__icon">🧠</div><h3>Olympiad Host & Supervisor</h3><p>Hosted and supervised multiple Olympiads across math, science, and CS.</p></div>
+    <div class="ach reveal"><div class="ach__icon">📈</div><h3>Academic Track</h3><p>Grade 10 GPA: <b>3.86</b> · Grade 11 GPA: <b>3.97</b> — consistently among top performers.</p></div>
+    <div class="ach reveal"><div class="ach__icon">⚡</div><h3>Multi-Hackathon Participant</h3><p>Active across inter-college hackathons, exhibitions, and tech events.</p></div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership" class="section">
+  <div class="section__head reveal">
+    <span class="eyebrow">06 — Leadership</span>
+    <h2 class="section__title">Leading the Sci-Tech Club.</h2>
+  </div>
+  <div class="lead-card reveal">
+    <div class="lead-card__left">
+      <div class="lead-role">President</div>
+      <h3>Sci-Tech Club · KIST College</h3>
+      <p>I lead a student community focused on turning curiosity into action — running events that get people building, competing, and learning together.</p>
+    </div>
+    <ul class="lead-card__right">
+      <li><span>01</span> Organized technical events end-to-end</li>
+      <li><span>02</span> Led and mentored cross-year teams</li>
+      <li><span>03</span> Hosted Olympiads across multiple subjects</li>
+      <li><span>04</span> Coordinated workshops and tech activities</li>
+      <li><span>05</span> Grew participation in technology programs</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section--contact">
+  <div class="contact-wrap reveal">
+    <span class="eyebrow">07 — Contact</span>
+    <h2 class="contact__title">Let's build something <em>worth shipping</em>.</h2>
+    <p class="contact__sub">Open to internships, collaborations, and conversations about software, AI, and the messy fun of building products. The fastest way to reach me is email.</p>
+
+    <a href="mailto:sidhantkhanal37@email.com" class="contact__mail magnetic">
+      sidhantkhanal37@email.com
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+
+    <div class="socials">
+      <a class="social" href="https://github.com/Shiva-Khanal" target="_blank" rel="noopener">
+        <span class="social__k">GitHub</span><span class="social__v">@Shiva-Khanal ↗</span>
+      </a>
+      <a class="social" href="https://www.linkedin.com/in/shiva-khanal-0456a9365" target="_blank" rel="noopener">
+        <span class="social__k">LinkedIn</span><span class="social__v">Shiva Khanal ↗</span>
+      </a>
+      <a class="social" href="https://www.instagram.com/sidhant_d_khanal" target="_blank" rel="noopener">
+        <span class="social__k">Instagram</span><span class="social__v">@sidhant_d_khanal ↗</span>
+      </a>
+      <a class="social" href="#" onclick="navigator.clipboard&&navigator.clipboard.writeText('shiva_khanal');this.querySelector('.social__v').textContent='copied ✓';return false;">
+        <span class="social__k">Discord</span><span class="social__v">shiva_khanal · copy</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>© <span id="year"></span> Shiva Khanal · Crafted in Kathmandu.</span>
+    <span class="footer__motto">Learn to Grow.</span>
+  </div>
+</footer>
+
+</main>
+
+<script src="/script.js"></script>
+</body>
+</html>
