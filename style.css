@@ -60,17 +60,6 @@ body {
   mix-blend-mode: overlay;
 }
 
-/* ---------- CURSOR ---------- */
-.cursor-dot, .cursor-ring {
-  position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;
-  transform: translate(-50%,-50%); border-radius: 50%;
-  mix-blend-mode: difference;
-}
-.cursor-dot { width: 6px; height: 6px; background: #fff; transition: transform .12s ease; }
-.cursor-ring { width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.5); transition: transform .25s ease, width .25s, height .25s; }
-.cursor-ring.is-hover { width: 64px; height: 64px; border-color: rgba(255,255,255,0.8); }
-@media (max-width: 900px) { .cursor-dot, .cursor-ring { display: none; } }
-
 /* ---------- NAV ---------- */
 .nav {
   position: fixed; top: 18px; left: 50%; transform: translateX(-50%);
@@ -399,6 +388,10 @@ main { padding: 0 24px; }
   display: flex; flex-direction: column; text-decoration: none; color: var(--fg);
   border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
   background: var(--bg-card); transition: transform .35s, border-color .25s;
+}
+.exp-link {
+  text-decoration: none;
+  color: var(--fg);
 }
 .exp:hover { transform: translateY(-6px); border-color: var(--line-strong); }
 .exp__art { aspect-ratio: 16/10; display: grid; place-items: center; position: relative; overflow: hidden; }
